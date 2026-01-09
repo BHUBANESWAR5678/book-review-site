@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Book Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📚 My Book Reviews</h1>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button id="toggle-theme">Toggle Dark Mode</button>
+        <input type="text" id="search" placeholder="Search by title...">
+        <select id="sort">
+            <option value="">Sort by rating</option>
+            <option value="high">Highest first</option>
+            <option value="low">Lowest first</option>
+        </select>
+    </div>
+
+    <!-- Book list -->
+    <div id="book-list"></div>
+
+    <h2>Add / Edit Review</h2>
+
+    <!-- Review form -->
+    <form id="review-form">
+        <input type="text" id="title" placeholder="Book title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <textarea id="review" placeholder="Your review" required></textarea>
+
+        <select id="rating" required>
+            <option value="">Rating</option>
+            <option value="⭐">⭐</option>
+            <option value="⭐⭐">⭐⭐</option>
+            <option value="⭐⭐⭐">⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <button type="submit" id="submit-btn">Submit Review</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

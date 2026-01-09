@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.author {
+    color: #555;
+    font-style: italic;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}.book-card button {
+    margin-top: 10px;
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-card button:hover {
+    background: #e04848;
+}
+.body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark .book-card {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+    background: #2a2a2a;
+    color: #eee;
+    border: 1px solid #555;
+}
+
+body.dark button {
+    background: #333;
+    color: #eee;
+}
